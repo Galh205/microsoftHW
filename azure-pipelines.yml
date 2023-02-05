@@ -9,10 +9,10 @@ steps:
   inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'copy-connection'
-    subscriptionId: '00000000-0000-0000-0000-000000000000'
+    subscriptionId: 'a8108c2b-496c-424d-8347-ecc8afb6384c'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'demogroup'
-    location: 'West US'
+    resourceGroupName: 'rg-galh'
+    location: 'East US'
     templateLocation: 'URL of the file'
     csmFileLink: '$(AzureFileCopy.StorageContainerUri)templates/mainTemplate.json$(AzureFileCopy.StorageContainerSasToken)'
     csmParametersFileLink: '$(AzureFileCopy.StorageContainerUri)templates/mainTemplate.parameters.json$(AzureFileCopy.StorageContainerSasToken)'
